@@ -1,0 +1,5 @@
+For creating a dynamic web project click on File Menu -> New -> dynamic web project -> write your project name e.g. first -> Finish. 
+For creating a jsp file explore the project by clicking the + icon -> right click on WebContent -> New -> jsp -> write your jsp file name e.g. index -> next -> Finish. 
+For starting the server and deploying the project in one step Right click on your project -> Run As -> Run on Server -> choose tomcat server -> next -> addAll -> finish. 
+How to configure tomcat server in Eclipse IDE
+If you are using Eclipse IDE first time, you need to configure the tomcat server First. For configuring the tomcat server in eclipse IDE, click on servers tab at the bottom side of the IDE -> right click on blank area -> New -> Servers -> choose tomcat then its version -> next -> click on Browse button -> select the apache tomcat root folder previous to bin -> next -> addAll -> Finish.
