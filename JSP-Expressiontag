@@ -1,0 +1,51 @@
+JSP expression tag
+
+/*The code placed within JSP expression tag is written to the output stream of the response. So you need not write out.print() to write data. It is mainly used to print the values of variable or method.
+Syntax of JSP expression tag*/
+
+    <%=  statement %>  
+
+Example of JSP expression tag
+
+In this example of jsp expression tag, we are simply displaying a welcome message.
+
+    <html>  
+    <body>  
+    <%= "welcome to jsp" %>  
+    </body>  
+    </html>  
+    
+    /*Example of JSP expression tag that prints current time*/
+
+To display the current time, we have used the getTime() method of Calendar class. The getTime() is an instance method of Calendar class, so we have called it after getting the instance of Calendar class by the getInstance() method.
+
+index.jsp
+
+    <html>  
+    <body>  
+    Current Time: <%= java.util.Calendar.getInstance().getTime() %>  
+    </body>  
+    </html>
+    
+  /*  Example of JSP expression tag that prints the user name
+
+In this example, we are printing the username using the expression tag. The index.html file gets the username and sends the request to the welcome.jsp file, which displays the username.*/
+
+File: index.jsp
+
+    <html>  
+    <body>  
+    <form action="welcome.jsp">  
+    <input type="text" name="uname"><br/>  
+    <input type="submit" value="go">  
+    </form>  
+    </body>  
+    </html>  
+
+File: welcome.jsp
+
+    <html>  
+    <body>  
+    <%= "Welcome "+request.getParameter("uname") %>  
+    </body>  
+    </html>
