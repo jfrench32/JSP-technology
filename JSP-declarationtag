@@ -1,0 +1,28 @@
+/*Example of JSP declaration tag that declares field
+
+In this example of JSP declaration tag, we are declaring the field and printing the value of the declared field using the jsp expression tag.*/
+
+index.jsp
+
+    <html>  
+    <body>  
+    <%! int data=50; %>  
+    <%= "Value of the variable is:"+data %>  
+    </body>  
+    </html>  
+    
+  /*  Example of JSP declaration tag that declares method
+
+In this example of JSP declaration tag, we are defining the method which returns the cube of given number and calling this method from the jsp expression tag. But we can also use jsp scriptlet tag to call the declared method.
+index.jsp*/
+
+    <html>  
+    <body>  
+    <%!   
+    int cube(int n){  
+    return n*n*n*;  
+    }  
+    %>  
+    <%= "Cube of 3 is:"+cube(3) %>  
+    </body>  
+    </html>  
